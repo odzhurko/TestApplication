@@ -1,0 +1,52 @@
+﻿[
+  {
+    "FabricId": 1,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 1,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 1,
+    "CategoryId": 2,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 2,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 1,
+    "CategoryId": 2,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 1,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 3,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 3,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 3,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  },
+  {
+    "FabricId": 3,
+    "CategoryId": 1,
+    "GeneratedIdentifier": ""
+  }
+]
