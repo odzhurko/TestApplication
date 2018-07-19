@@ -8,7 +8,7 @@ Aplikacja pisana w Visual studio 2017 w .NET Core 2.0
 	Czyli wkazujemy server gdzie powinna powstać baza. Domyślnie uztawiany jest lokalny server.
 	2.2 W "Package Manager Console" wpisujem polecenia "Add-Migration InitialCreate" a później "Update-Database"
 	2.3 Można zalogować się na server bazodanowy i sprawdzić czy baza powstała. 
-3. Odpalamy TestApi.WebApi. Dla pracy z WebApi w Repositorium jest plik kolecji Postman o nazwie "KolecjaPostman".
+3. Odpalamy TestApi.WebApi. Dla pracy z WebApi w Repositorium jest plik kolecji Postman o nazwie "TestApp Collections.postman_collection.json".
 	Należy ten plik zaimpoorwować do własnej aplikacji i dodać zmienną "ApiHost". Ta zmienna oznacza host na którym 
 	powstało WebApi. A moim przypadku to "http://localhost:55872/".
 4. Skoro baza jest dopiero stworzona to ona nie zawiera danych. "Fill Default Data" request uzupełnia baze danymi. 
