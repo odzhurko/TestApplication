@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "e589f73e-d042-4380-a7cd-6fe07af60db0",
+		"name": "TestApp Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Fill Default Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{ApiHost}}api/Settings/FillDefaultData",
+					"host": [
+						"{{ApiHost}}api"
+					],
+					"path": [
+						"Settings",
+						"FillDefaultData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.1 Get all Identifiers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{ApiHost}}/api/Identifier?pageNumber=0&pageSize=5",
+					"host": [
+						"{{ApiHost}}"
+					],
+					"path": [
+						"api",
+						"Identifier"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.2. Get all fabrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{ApiHost}}api/Settings/Fabric",
+					"host": [
+						"{{ApiHost}}api"
+					],
+					"path": [
+						"Settings",
+						"Fabric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.3. Get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{ApiHost}}api/Settings/Category",
+					"host": [
+						"{{ApiHost}}api"
+					],
+					"path": [
+						"Settings",
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.1. Add New Fabric",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FabricCode\":\"PS\",\n\t\"FabricName\":\"PostMan\"\n}"
+				},
+				"url": {
+					"raw": "{{ApiHost}}api/Settings/Fabric",
+					"host": [
+						"{{ApiHost}}api"
+					],
+					"path": [
+						"Settings",
+						"Fabric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.2. Add new category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"CategoryCode\":\"WES\",\n\t\"CategoryName\":\"Postman Category\"\n}"
+				},
+				"url": {
+					"raw": "{{ApiHost}}api/Settings/Category",
+					"host": [
+						"{{ApiHost}}api"
+					],
+					"path": [
+						"Settings",
+						"Category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.3 Generate new Identifier",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"categoryId\": 2,\n\t\"fabricId\": 2\n}"
+				},
+				"url": {
+					"raw": "{{ApiHost}}/api/Identifier",
+					"host": [
+						"{{ApiHost}}"
+					],
+					"path": [
+						"api",
+						"Identifier"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
